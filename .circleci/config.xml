@@ -1,6 +1,10 @@
 version: 2.1
 orbs:
   maven: circleci/maven@0.0.11
+executors:
+  my-executor:
+    docker:
+      - image: 'circleci/openjdk:8'
 workflows:
   maven_test:
     jobs:
