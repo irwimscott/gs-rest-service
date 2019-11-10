@@ -7,10 +7,6 @@ workflows:
       - deploy
 jobs:
   deploy:
-    environment:
-      SONAR_ORGANIZATION: $SONAR_ORGANIZATION
-      SONAR_PROJECT_KEY: $SONAR_PROJECT_KEY
-      SONAR_TOKEN: $SONAR_TOKEN
     executor: heroku/default # Uses the basic buildpack-deps image, which has the prerequisites for installing heroku's CLI.
     steps:
       - checkout
