@@ -1,11 +1,17 @@
 version: 2.1
 orbs:
   heroku: circleci/heroku@0.0.8
-  sonarcloud: sonarsource/sonarcloud@1.0.1
 workflows:
   sonar:
     jobs:
-      - sonarscan
+      build:
+        docker:
+          - image: 'openjdk:8'
+        steps:
+          - checkout
+          - sonarcloud/scan
+     orbs:
+       sonarcloud: sonarsource/sonarcloud@1.0.1
   heroku_deploy:
     jobs:
       - deploy
@@ -17,7 +23,3 @@ jobs:
       - heroku/install # Runs the heroku install command, if necessary.
       - heroku/deploy-via-git: # Deploys branch to Heroku via git push.
           only-branch: master # If you specify an only-branch, the deploy will not occur for any other branch.
-  sonarscan:
-    steps:
-      - checkout
-      - sonarcloud/scan
