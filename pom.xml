@@ -35,7 +35,6 @@
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
         <sonar.organization>irwimscott</sonar.organization>
         <sonar.projectKey>irwimscott_gs-rest-service</sonar.projectKey>
-        <sonar.token>c0874046460f20f7462dba315f1dc8ae8cae1740</sonar.token>
     </properties>
 
 
