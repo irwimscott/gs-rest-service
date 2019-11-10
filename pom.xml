@@ -35,8 +35,7 @@
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
         <sonar.organization>${SONAR_ORGANIZATION}</sonar.organization>
         <sonar.projectKey>${SONAR_PROJECT_KEY}</sonar.projectKey>
-        <sonar.token>${SONAR_TOKEN}</sonar.token>
-        <sonar.login>${SONAR_LOGIN}</sonar.login>
+        <sonar.token>c0874046460f20f7462dba315f1dc8ae8cae1740</sonar.token>
     </properties>
 
 
