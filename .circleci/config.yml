@@ -11,6 +11,7 @@ jobs:
     steps:
       - checkout
       - heroku/install # Runs the heroku install command, if necessary.
+      - run: heroku config:set SONAR_ORGANIZATION=${SONAR_ORGANIZATION} SONAR_PROJECT_KEY=${SONAR_PROJECT_KEY}
       - heroku/deploy-via-git: # Deploys branch to Heroku via git push.
           only-branch: master # If you specify an only-branch, the deploy will not occur for any other branch.
 
