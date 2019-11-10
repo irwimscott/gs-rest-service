@@ -34,9 +34,9 @@
         <java.version>1.8</java.version>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
         <sonar.organization>${SONAR_ORGANIZATION}</sonar.organization>
-        <sonar.login>${SONAR_LOGIN}</sonar.login>
-        <sonar.project.key>${SONAR_PROJECT_KEY}</sonar.project.key>
+        <sonar.projectKey>${SONAR_PROJECT_KEY}</sonar.projectKey>
         <sonar.token>${SONAR_TOKEN}</sonar.token>
+        <sonar.login>${SONAR_LOGIN}</sonar.login>
     </properties>
 
 
