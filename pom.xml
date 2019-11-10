@@ -33,8 +33,8 @@
     <properties>
         <java.version>1.8</java.version>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-        <sonar.organization>irwimscott</sonar.organization>
-        <sonar.projectKey>irwimscott_gs-rest-service</sonar.projectKey>
+        <sonar.organization>${SONAR_ORGANIZATION}</sonar.organization>
+        <sonar.projectKey>${SONAR_PROJECT_KEY}</sonar.projectKey>
     </properties>
 
 
